@@ -49,7 +49,7 @@ const getById = (id: string): Cypress.Chainable<JQuery<HTMLElement>> =>
   cy.get(`[id='${id}']`);
 
 const getByTestId = (testid: string): Cypress.Chainable<JQuery<HTMLElement>> =>
-  cy.get(`[data-cy='${testid}']`);
+  cy.get(`[data-test='${testid}']`);
 
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace

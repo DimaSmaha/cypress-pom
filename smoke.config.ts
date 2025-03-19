@@ -7,12 +7,14 @@ const env = {
   VALID_USER_PASSWORD: process.env.VALID_USER_PASSWORD,
 };
 
+const getBaseUrl = () => process.env.BASE_URL;
+
 export default defineConfig({
   viewportWidth: 1920,
   viewportHeight: 1080,
   defaultCommandTimeout: 10000,
   e2e: {
-    baseUrl: `${Cypress.env("BASE_URL")}`,
+    baseUrl: `${getBaseUrl()}`,
     chromeWebSecurity: false,
     setupNodeEvents(on, config) {
       // implement node event listeners here

@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "cy-open": "cypress open",
+    "cy-open-smoke": "cypress open --config-file smoke.config.ts",
+    "cy-run-smoke": "cypress run --config-file smoke.config.ts"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^10.0.3",
+    "@types/node": "^22.13.5",
+    "cypress": "^14.1.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.3.3"
+  }
+}
